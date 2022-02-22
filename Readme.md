@@ -5,12 +5,12 @@ day.csv have the following fields:
 	
 - instant: record index
 - dteday : date
-- season : season (1:spring, 2:summer, 3:fall, 4:winter)
+- season : season (1:winter, 2:spring, 3:summer, 4:fall)
 - yr : year (0: 2018, 1:2019)
 - mnth : month ( 1 to 12)
 - holiday : weather day is a holiday or not (extracted from http://dchr.dc.gov/page/holiday-schedule)
 - weekday : day of the week
-- workingday : if day is neither weekend nor holiday is 1, otherwise is 0.
+- workingday : if day is either weekend or a holiday, this is 0, otherwise this is 1.
 + weathersit : 
 	- 1: Clear, Few clouds, Partly cloudy, Partly cloudy
 	- 2: Mist + Cloudy, Mist + Broken clouds, Mist + Few clouds, Mist
@@ -19,7 +19,7 @@ day.csv have the following fields:
 - temp : temperature in Celsius
 - atemp: feeling temperature in Celsius
 - hum: humidity
-- windspeed: wind speed
+- windspeed: wind speed (probably mph)
 - casual: count of casual users
 - registered: count of registered users
 - cnt: count of total rental bikes including both casual and registered
